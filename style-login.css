@@ -1,0 +1,129 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #1b2838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #c7d5e0;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+  display: flex;
+  width: 900px;
+  height: 550px;
+  background-color: #171a21;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+/* ===== LADO ESQUERDO (FORMULÁRIO) ===== */
+.form-section {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section h2 {
+  font-size: 28px;
+  color: #66c0f4;
+  margin-bottom: 10px;
+}
+
+.form-section p {
+  color: #b8b6b4;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2a475e;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input:focus {
+  background: #3c6e91;
+  box-shadow: 0 0 5px #66c0f4;
+}
+
+button {
+  background: linear-gradient(90deg, #66c0f4, #417a9b);
+  color: #1b2838;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #417a9b, #66c0f4);
+}
+
+/* ===== LINKS ===== */
+.link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #c7d5e0;
+  text-align: center;
+}
+
+.link a {
+  color: #66c0f4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== LADO DIREITO (IMAGEM) ===== */
+.image-section {
+  flex: 1;
+  background: linear-gradient(180deg, #2a475e, #1b2838);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 80%;
+  max-width: 380px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
